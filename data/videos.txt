@@ -1,0 +1,5 @@
+# Mỗi dòng một video, các phần cách nhau bằng dấu |
+# Cú pháp:  link-hoặc-ID-YouTube | Tiêu đề | Dự án | Mô tả (không bắt buộc)
+# Dòng bắt đầu bằng # là ghi chú, bị bỏ qua.
+# Ví dụ:
+# https://www.youtube.com/watch?v=XXXXXXXXXXX | Hạ cọc ống thép SPSP | Móng SPSP Bến Lức | Công đoạn 3 - hạ cọc

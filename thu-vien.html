@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thư viện — Biện Pháp Thi Công Cầu</title>
+<meta name="description" content="Thư viện tài liệu, hình ảnh và video thi công cầu từ các dự án thực tế — chỉ xem trực tuyến.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/library.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="mark">BP</span>
+      <span class="name">Biện Pháp Thi Công Cầu</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="mong-spsp.html">Móng SPSP</a>
+      <a href="thu-vien.html" class="cur">Thư viện</a>
+      <button class="theme-toggle" id="themeToggle" type="button">Giao diện: Hệ thống</button>
+    </nav>
+  </div>
+</header>
+
+<section class="lib-hero">
+  <div class="wrap">
+    <div class="kicker">Thư viện chia sẻ</div>
+    <h1>Tài liệu, hình ảnh &amp; video thi công</h1>
+    <p class="lead">Tư liệu từ các dự án thực tế. Toàn bộ nội dung <b>chỉ để xem trực tuyến</b>, không cho tải về.</p>
+  </div>
+</section>
+
+<main class="wrap lib-main">
+  <div class="tabs" role="tablist" aria-label="Loại nội dung">
+    <button class="tab" role="tab" id="tab-tai-lieu" data-tab="tai-lieu" aria-controls="pane-tai-lieu" aria-selected="true">Tài liệu <span class="count" id="cnt-tai-lieu">0</span></button>
+    <button class="tab" role="tab" id="tab-hinh-anh" data-tab="hinh-anh" aria-controls="pane-hinh-anh" aria-selected="false">Hình ảnh <span class="count" id="cnt-hinh-anh">0</span></button>
+    <button class="tab" role="tab" id="tab-video" data-tab="video" aria-controls="pane-video" aria-selected="false">Video <span class="count" id="cnt-video">0</span></button>
+  </div>
+
+  <div class="filters">
+    <input type="search" id="q" placeholder="Tìm theo tên, dự án…" aria-label="Tìm kiếm">
+    <select id="proj" aria-label="Lọc theo dự án"><option value="">Tất cả dự án</option></select>
+  </div>
+
+  <section class="pane" id="pane-tai-lieu" role="tabpanel" aria-labelledby="tab-tai-lieu"></section>
+  <section class="pane" id="pane-hinh-anh" role="tabpanel" aria-labelledby="tab-hinh-anh" hidden></section>
+  <section class="pane" id="pane-video" role="tabpanel" aria-labelledby="tab-video" hidden></section>
+
+  <aside class="contact" id="contact" hidden></aside>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-row">
+    <div>Biện Pháp Thi Công Cầu — nội dung chỉ để xem, không tải về.</div>
+    <div>Cần bản gốc: liên hệ qua email hoặc nhắn tin tại kênh YouTube</div>
+  </div>
+</footer>
+
+<!-- Trình xem PDF -->
+<div class="viewer protect" id="pdfViewer" hidden role="dialog" aria-modal="true" aria-label="Xem tài liệu">
+  <div class="viewer-bar">
+    <div class="viewer-title" id="pdfTitle"></div>
+    <div class="viewer-tools">
+      <button type="button" id="pdfZoomOut" aria-label="Thu nhỏ">−</button>
+      <span id="pdfZoomLbl">100%</span>
+      <button type="button" id="pdfZoomIn" aria-label="Phóng to">+</button>
+      <button type="button" id="pdfClose" class="close">Đóng ✕</button>
+    </div>
+  </div>
+  <div class="viewer-body" id="pdfBody"></div>
+</div>
+
+<!-- Trình xem ảnh -->
+<div class="viewer protect" id="imgViewer" hidden role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <div class="viewer-bar">
+    <div class="viewer-title" id="imgTitle"></div>
+    <div class="viewer-tools">
+      <button type="button" id="imgPrev" aria-label="Ảnh trước">‹</button>
+      <span id="imgPos"></span>
+      <button type="button" id="imgNext" aria-label="Ảnh sau">›</button>
+      <button type="button" id="imgClose" class="close">Đóng ✕</button>
+    </div>
+  </div>
+  <div class="viewer-body img-body" id="imgBody"></div>
+</div>
+
+<!-- Trình phát video -->
+<div class="viewer" id="vidViewer" hidden role="dialog" aria-modal="true" aria-label="Xem video">
+  <div class="viewer-bar">
+    <div class="viewer-title" id="vidTitle"></div>
+    <div class="viewer-tools"><button type="button" id="vidClose" class="close">Đóng ✕</button></div>
+  </div>
+  <div class="viewer-body vid-body" id="vidBody"></div>
+</div>
+
+<script src="assets/vendor/pdf.min.js"></script>
+<script src="assets/library.js"></script>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeToggle'), KEY='spsp_site_theme';
+  function apply(t){
+    if(t==='light'){root.setAttribute('data-theme','light');btn.textContent='Giao diện: Sáng';}
+    else if(t==='dark'){root.setAttribute('data-theme','dark');btn.textContent='Giao diện: Tối';}
+    else{root.removeAttribute('data-theme');btn.textContent='Giao diện: Hệ thống';}
+  }
+  var saved='system'; try{saved=localStorage.getItem(KEY)||'system';}catch(e){}
+  apply(saved);
+  btn.addEventListener('click',function(){
+    var order=['system','light','dark'],cur=0;
+    try{cur=order.indexOf(localStorage.getItem(KEY)||'system');}catch(e){}
+    var next=order[(cur+1)%3]; apply(next);
+    try{localStorage.setItem(KEY,next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

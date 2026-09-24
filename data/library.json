@@ -1,0 +1,52 @@
+{
+  "cap_nhat": "2026-09-24",
+  "documents": [
+    {
+      "title": "Slide tổng hợp biện pháp móng SPSP",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/docs/Móng SPSP Bến Lức/Slide tổng hợp biện pháp móng SPSP.pdf",
+      "pages": 16,
+      "size_mb": 1.5,
+      "desc": "Tổng hợp 12 công đoạn thi công móng cọc ống thép SPSP, cầu Bến Lức - Long Thành."
+    }
+  ],
+  "images": [
+    {
+      "title": "Hạ cọc thực tế hiện trường",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Hạ cọc thực tế hiện trường.jpg",
+      "desc": ""
+    },
+    {
+      "title": "Lắp khung dẫn hướng định vị cọc",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Lắp khung dẫn hướng định vị cọc.jpg",
+      "desc": ""
+    },
+    {
+      "title": "Lắp thanh chống giằng chống vòng vây",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Lắp thanh chống giằng chống vòng vây.jpg",
+      "desc": ""
+    },
+    {
+      "title": "Sơ đồ trình tự thi công tổng thể SPSP",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Sơ đồ trình tự thi công tổng thể SPSP.jpg",
+      "desc": ""
+    },
+    {
+      "title": "Thiết bị đào và cutting edge hiện trường",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Thiết bị đào và cutting edge hiện trường.jpg",
+      "desc": ""
+    },
+    {
+      "title": "Trình tự thi công bản đỉnh",
+      "project": "Móng SPSP Bến Lức",
+      "file": "files/images/Móng SPSP Bến Lức/Trình tự thi công bản đỉnh.jpg",
+      "desc": ""
+    }
+  ],
+  "videos": []
+}

@@ -1,0 +1,113 @@
+/* ---------- Thư viện: trang & tab ---------- */
+.nav-links a.cur{color:var(--accent)}
+.lib-hero{padding:44px 0 30px;background:var(--bg-elev);border-bottom:1px solid var(--line)}
+.lib-hero .kicker{font-family:var(--font-mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lib-hero h1{font-size:clamp(26px,4.2vw,38px);line-height:1.2;margin:10px 0 10px;font-weight:700;letter-spacing:-.02em}
+.lib-hero .lead{margin:0;color:var(--ink-soft);font-size:16px;max-width:64ch}
+.lib-main{padding-top:26px;padding-bottom:56px}
+
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);overflow-x:auto}
+.tab{
+  font:600 14.5px var(--font-body);color:var(--ink-soft);background:none;border:0;
+  border-bottom:3px solid transparent;padding:12px 16px;cursor:pointer;white-space:nowrap;margin-bottom:-1px;
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent)}
+.tab:focus-visible,.viewer button:focus-visible,.item:focus-visible{outline:2px solid var(--data);outline-offset:2px}
+.tab .count{
+  font:500 11px var(--font-mono);background:var(--bg);border:1px solid var(--card-border);
+  border-radius:20px;padding:1px 8px;margin-left:6px;color:var(--ink-mute)
+}
+
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 20px}
+.filters input,.filters select{
+  font:400 14px var(--font-body);color:var(--ink);background:var(--card);
+  border:1px solid var(--card-border);border-radius:9px;padding:9px 12px;min-height:40px
+}
+.filters input{flex:1 1 240px;min-width:0}
+.pane[hidden]{display:none}
+
+.empty{
+  background:var(--card);border:1px dashed var(--card-border);border-radius:14px;
+  padding:36px 20px;text-align:center;color:var(--ink-mute);font-size:14.5px
+}
+
+/* ---------- Lưới thẻ ---------- */
+.grid{display:grid;gap:16px}
+.grid.docs{grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.grid.imgs{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.grid.vids{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.item{
+  display:flex;flex-direction:column;text-align:left;font:inherit;color:var(--ink);
+  background:var(--card);border:1px solid var(--card-border);border-radius:14px;
+  box-shadow:var(--shadow);overflow:hidden;cursor:pointer;padding:0
+}
+.item:hover{border-color:var(--accent)}
+.item .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.item .proj{font:600 11px var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--data)}
+.item h3{margin:0;font-size:15.5px;line-height:1.35;font-weight:600}
+.item p{margin:0;font-size:13px;color:var(--ink-mute);line-height:1.5}
+.item .meta{font:400 11.5px var(--font-mono);color:var(--ink-mute)}
+.doc-ico{
+  height:96px;display:flex;align-items:center;justify-content:center;background:var(--accent-soft);
+  color:var(--accent);font:700 22px var(--font-mono);letter-spacing:.05em
+}
+.thumb{aspect-ratio:4/3;background:var(--bg);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.thumb canvas{width:100%;height:100%;object-fit:cover;display:block}
+.vthumb{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.vthumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.92}
+.vthumb .play{
+  position:absolute;inset:0;margin:auto;width:56px;height:56px;border-radius:50%;
+  background:rgba(194,80,14,.92);display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;padding-left:4px
+}
+
+/* ---------- Khối liên hệ ---------- */
+.contact{
+  margin-top:34px;background:var(--card);border:1px solid var(--card-border);border-left:4px solid var(--accent);
+  border-radius:12px;padding:18px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap
+}
+.contact p{margin:0;font-size:14px;color:var(--ink-soft);max-width:70ch}
+.contact .acts{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ---------- Trình xem toàn màn hình ---------- */
+.viewer{
+  position:fixed;inset:0;z-index:100;background:#0b1118;display:flex;flex-direction:column;color:#e9eef3
+}
+.viewer[hidden]{display:none}
+.viewer-bar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;
+  background:#121b28;border-bottom:1px solid #253345
+}
+.viewer-title{font-weight:600;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.viewer-tools{display:flex;align-items:center;gap:8px;font:500 12.5px var(--font-mono);flex-shrink:0}
+.viewer-tools button{
+  font:600 14px var(--font-body);color:#e9eef3;background:#1c2839;border:1px solid #2d3d52;
+  border-radius:8px;min-width:38px;height:36px;padding:0 12px;cursor:pointer
+}
+.viewer-tools button:hover{border-color:#e8823c}
+.viewer-tools .close{background:#c2500e;border-color:#c2500e}
+.viewer-body{flex:1;overflow:auto;padding:18px 12px 60px;text-align:center;-webkit-overflow-scrolling:touch}
+.pdf-page{
+  margin:0 auto 14px;background:#fff;box-shadow:0 4px 24px rgba(0,0,0,.5);position:relative;
+  display:flex;align-items:center;justify-content:center;color:#7c8a97;font-size:13px
+}
+.pdf-page canvas{display:block;width:100%;height:auto}
+.viewer-msg{padding:60px 20px;color:#aebccb;font-size:15px}
+.img-body{display:flex;align-items:center;justify-content:center;padding:12px}
+.img-body canvas{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 4px 24px rgba(0,0,0,.5)}
+.vid-body{display:flex;align-items:center;justify-content:center;padding:16px}
+.vid-body .frame{width:min(1100px,100%);aspect-ratio:16/9;background:#000}
+.vid-body iframe{width:100%;height:100%;border:0;display:block}
+
+/* ---------- Chống sao chép / in ---------- */
+.protect,.protect *{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.protect canvas,.thumb canvas{-webkit-user-drag:none}
+@media print{
+  body>*{display:none!important}
+  body::before{content:"Nội dung chỉ để xem trực tuyến. Vui lòng liên hệ chủ trang nếu cần bản gốc.";display:block;padding:40px;font:16px sans-serif}
+}
+@media (max-width:640px){
+  .viewer-bar{padding:8px 10px}
+  .viewer-title{font-size:13px}
+  .viewer-tools button{min-width:34px;padding:0 9px}
+}
