@@ -2,49 +2,57 @@
   "cap_nhat": "2026-09-24",
   "documents": [
     {
+      "title": "Method Statement for Reinforcing SPSP at P19",
+      "project": "Móng SPSP",
+      "file": "files/docs/Móng SPSP/Method Statement for Reinforcing SPSP at P19.pdf",
+      "pages": null,
+      "size_mb": 4.4,
+      "desc": ""
+    },
+    {
       "title": "Slide tổng hợp biện pháp móng SPSP",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/docs/Móng SPSP Bến Lức/Slide tổng hợp biện pháp móng SPSP.pdf",
-      "pages": 16,
+      "project": "Móng SPSP",
+      "file": "files/docs/Móng SPSP/Slide tổng hợp biện pháp móng SPSP.pdf",
+      "pages": null,
       "size_mb": 1.5,
       "desc": "Tổng hợp 12 công đoạn thi công móng cọc ống thép SPSP, cầu Bến Lức - Long Thành."
     }
   ],
   "images": [
     {
-      "title": "Hạ cọc thực tế hiện trường",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Hạ cọc thực tế hiện trường.jpg",
+      "title": "Hß║í cß╗ìc thß╗▒c tß║┐ hiß╗çn tr╞░ß╗¥ng",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Hß║í cß╗ìc thß╗▒c tß║┐ hiß╗çn tr╞░ß╗¥ng.jpg",
       "desc": ""
     },
     {
-      "title": "Lắp khung dẫn hướng định vị cọc",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Lắp khung dẫn hướng định vị cọc.jpg",
+      "title": "Lß║»p khung dß║½n h╞░ß╗¢ng ─æß╗ïnh vß╗ï cß╗ìc",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Lß║»p khung dß║½n h╞░ß╗¢ng ─æß╗ïnh vß╗ï cß╗ìc.jpg",
       "desc": ""
     },
     {
-      "title": "Lắp thanh chống giằng chống vòng vây",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Lắp thanh chống giằng chống vòng vây.jpg",
+      "title": "Lß║»p thanh chß╗æng giß║▒ng chß╗æng v├▓ng v├óy",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Lß║»p thanh chß╗æng giß║▒ng chß╗æng v├▓ng v├óy.jpg",
       "desc": ""
     },
     {
-      "title": "Sơ đồ trình tự thi công tổng thể SPSP",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Sơ đồ trình tự thi công tổng thể SPSP.jpg",
+      "title": "S╞í ─æß╗ô tr├¼nh tß╗▒ thi c├┤ng tß╗òng thß╗â SPSP",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/S╞í ─æß╗ô tr├¼nh tß╗▒ thi c├┤ng tß╗òng thß╗â SPSP.jpg",
       "desc": ""
     },
     {
-      "title": "Thiết bị đào và cutting edge hiện trường",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Thiết bị đào và cutting edge hiện trường.jpg",
+      "title": "Thiß║┐t bß╗ï ─æ├áo v├á cutting edge hiß╗çn tr╞░ß╗¥ng",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Thiß║┐t bß╗ï ─æ├áo v├á cutting edge hiß╗çn tr╞░ß╗¥ng.jpg",
       "desc": ""
     },
     {
-      "title": "Trình tự thi công bản đỉnh",
-      "project": "Móng SPSP Bến Lức",
-      "file": "files/images/Móng SPSP Bến Lức/Trình tự thi công bản đỉnh.jpg",
+      "title": "Tr├¼nh tß╗▒ thi c├┤ng bß║ún ─æß╗ënh",
+      "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
+      "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Tr├¼nh tß╗▒ thi c├┤ng bß║ún ─æß╗ënh.jpg",
       "desc": ""
     }
   ],
