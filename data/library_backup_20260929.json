@@ -1,5 +1,5 @@
 {
-  "cap_nhat": "2026-09-29",
+  "cap_nhat": "2026-09-24",
   "documents": [
     {
       "title": "Method Statement for Reinforcing SPSP at P19",
@@ -16,22 +16,6 @@
       "pages": null,
       "size_mb": 1.5,
       "desc": "Tổng hợp 12 công đoạn thi công móng cọc ống thép SPSP, cầu Bến Lức - Long Thành."
-    },
-    {
-      "title": "Biện pháp thử tải tĩnh cọc làm việc Package J1 (bản sạch)",
-      "project": "Thử tải tĩnh cọc",
-      "file": "files/docs/Thử tải tĩnh cọc/Biện pháp thử tải tĩnh cọc làm việc Package J1 (bản sạch).pdf",
-      "pages": 85,
-      "size_mb": 14.9,
-      "desc": "Biện pháp thử tải tĩnh cọc khoan nhồi làm việc, gói thầu J1 (đã lược bỏ công văn, dấu đỏ, chữ ký)."
-    },
-    {
-      "title": "Slide tổng hợp biện pháp thử tải tĩnh cọc",
-      "project": "Thử tải tĩnh cọc",
-      "file": "files/docs/Thử tải tĩnh cọc/Slide tổng hợp biện pháp thử tải tĩnh cọc.pdf",
-      "pages": 13,
-      "size_mb": 1.6,
-      "desc": "Tổng hợp biện pháp thử tải tĩnh cọc Ø1500, tải thử 1.278 T, hệ phản lực và quy trình gia tải."
     }
   ],
   "images": [
@@ -69,24 +53,6 @@
       "title": "Tr├¼nh tß╗▒ thi c├┤ng bß║ún ─æß╗ënh",
       "project": "M├│ng SPSP Bß║┐n Lß╗⌐c",
       "file": "files/images/M├│ng SPSP Bß║┐n Lß╗⌐c/Tr├¼nh tß╗▒ thi c├┤ng bß║ún ─æß╗ënh.jpg",
-      "desc": ""
-    },
-    {
-      "title": "Hệ đối trọng thử tải hiện trường",
-      "project": "Thử tải tĩnh cọc",
-      "file": "files/images/Thử tải tĩnh cọc/Hệ đối trọng thử tải hiện trường.jpg",
-      "desc": ""
-    },
-    {
-      "title": "Sơ đồ hệ phản lực thử tải",
-      "project": "Thử tải tĩnh cọc",
-      "file": "files/images/Thử tải tĩnh cọc/Sơ đồ hệ phản lực thử tải.png",
-      "desc": ""
-    },
-    {
-      "title": "Biểu đồ gia tải thử tải tĩnh",
-      "project": "Thử tải tĩnh cọc",
-      "file": "files/images/Thử tải tĩnh cọc/Biểu đồ gia tải thử tải tĩnh.png",
       "desc": ""
     }
   ],
