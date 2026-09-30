@@ -5,7 +5,7 @@
 
   var TABS = ['tai-lieu', 'hinh-anh', 'video'];
   var S = { cfg: {}, docs: [], imgs: [], vids: [], tab: 'tai-lieu', q: '', proj: '', imgList: [], imgIdx: 0 };
-  var WM = 'Tham khảo kênh YouTube: @cuocsongquanhta_share';
+  var WM = 'Chỉ xem';
 
   function $(id) { return document.getElementById(id); }
   function mk(tag, cls, text) {
@@ -27,19 +27,27 @@
 
   /* ---------- Hình mờ (đóng thẳng vào canvas nên ảnh lưu lại vẫn có) ---------- */
   function stamp(ctx, w, h) {
-    /* Chỉ 2 dòng: một ở đầu trang (header), một ở cuối trang (footer). */
-    var fs = Math.max(12, Math.round(Math.min(w, h) / 40));
-    var bh = Math.round(fs * 2);
+    var fs = Math.max(13, Math.round(Math.min(w, h) / 24));
+    var text = WM;
     ctx.save();
     ctx.font = '600 ' + fs + 'px "IBM Plex Sans", Arial, sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    [0, h - bh].forEach(function (y) {
-      ctx.fillStyle = 'rgba(255,255,255,.82)';
-      ctx.fillRect(0, y, w, bh);
-      ctx.fillStyle = 'rgba(18,69,122,.95)';
-      ctx.fillText(WM, w / 2, y + bh / 2);
-    });
+    ctx.translate(w / 2, h / 2);
+    ctx.rotate(-Math.PI / 7);
+    var tw = ctx.measureText(text).width + fs * 3;
+    var th = fs * 4.2;
+    var diag = Math.sqrt(w * w + h * h);
+    var row = 0;
+    for (var y = -diag / 2; y < diag / 2; y += th, row++) {
+      for (var x = -diag / 2 - (row % 2) * tw / 2; x < diag / 2; x += tw) {
+        ctx.lineWidth = Math.max(2, fs / 7);
+        ctx.strokeStyle = 'rgba(255,255,255,.28)';
+        ctx.strokeText(text, x, y);
+        ctx.fillStyle = 'rgba(0,0,0,.22)';
+        ctx.fillText(text, x, y);
+      }
+    }
     ctx.restore();
   }
 
